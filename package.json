@@ -1,0 +1,22 @@
+{
+    "name": "menbre-skill",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "package": "parcel build index.js && zip -j menbre.zip dist/index.js",
+        "prettier": "prettier --write '*.{js,babelrc,json,prettierrc}'",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ask-sdk": "^2.6.0",
+        "i18next": "^17.0.11"
+    },
+    "devDependencies": {
+        "parcel-bundler": "^1.12.3",
+        "prettier": "^1.18.2"
+    }
+}
