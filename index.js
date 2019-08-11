@@ -7,11 +7,10 @@ const languageStrings = {
     en: {
         translation: {
             SKILL_NAME: 'Menbre',
-            HELP_MESSAGE: 'Repeat after me: "oh no no "',
+            HELP_MESSAGE: 'Repeat after me: "alexa, oh no"',
             HELP_REPROMPT: 'What can I help you with?',
-            FALLBACK_MESSAGE:
-                "The Space Facts skill can't help you with that.  It can help you discover facts about space if you say tell me a space fact. What can I help you with?",
-            FALLBACK_REPROMPT: 'What can I help you with?',
+            FALLBACK_MESSAGE: 'Are you having a menbre?',
+            FALLBACK_REPROMPT: 'Are you having a menbre?',
             ERROR_MESSAGE: 'Sorry, an error occurred.',
             STOP_MESSAGE: 'Goodbye!'
         }
