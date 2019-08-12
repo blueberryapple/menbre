@@ -157,7 +157,7 @@ const LocalizationInterceptor = {
 
 const skillBuilder = Alexa.SkillBuilders.custom();
 
-export const handler = skillBuilder
+const skill = skillBuilder
     .addRequestHandlers(
         menbreHandler,
         HelpHandler,
@@ -166,5 +166,7 @@ export const handler = skillBuilder
         SessionEndedRequestHandler
     )
     .addRequestInterceptors(LocalizationInterceptor)
-    .addErrorHandlers(ErrorHandler)
-    .lambda();
+    .addErrorHandlers(ErrorHandler);
+
+export const handler = skill.lambda();
+export const testableSkill = skill.create();
