@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "package": "parcel build index.js && zip -j menbre.zip dist/index.js",
-        "prettier": "prettier --write '*.{js,babelrc,json,prettierrc}'",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "prettier": "prettier --write '**/*.{js,babelrc,json,prettierrc}'",
+        "test": "jest"
     },
     "keywords": [],
     "author": "",
@@ -16,6 +16,10 @@
         "i18next": "^17.0.11"
     },
     "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "babel-jest": "^24.8.0",
+        "jest": "^24.8.0",
         "parcel-bundler": "^1.12.3",
         "prettier": "^1.18.2"
     }

@@ -1,0 +1,16 @@
+{
+    "version": "1.0",
+    "response": {
+        "outputSpeech": {
+            "type": "SSML",
+            "ssml": "<speak>Oh no, oh no no no; I'm having a menbre!</speak>"
+        },
+        "card": {
+            "type": "Simple",
+            "title": "Menbre",
+            "content": "Oh no, oh no no no; I'm having a menbre!"
+        }
+    },
+    "userAgent": "ask-node/2.6.0 Node/",
+    "sessionAttributes": {}
+}
