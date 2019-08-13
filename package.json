@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "package": "parcel build index.js && zip -j menbre.zip dist/index.js",
+        "package": "parcel build index.js --no-source-maps && zip -j menbre.zip dist/index.js",
         "prettier": "prettier --write '**/*.{js,babelrc,json,prettierrc}'",
         "test": "jest"
     },
@@ -13,7 +13,8 @@
     "license": "ISC",
     "dependencies": {
         "ask-sdk": "^2.6.0",
-        "i18next": "^17.0.11"
+        "i18next": "^17.0.11",
+        "npm": "^6.10.3"
     },
     "devDependencies": {
         "@babel/core": "^7.5.5",
